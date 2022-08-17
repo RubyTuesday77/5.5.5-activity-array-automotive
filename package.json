@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "5.5.5-activity-array-automotive",
+  "version": "1.0.0",
+  "description": "- In this lesson students work on sub-classing a base vehicle class - to do this we need a way of importing / using code from a different file...",
+  "main": "mecurySedan.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubyTuesday77/5.5.5-activity-array-automotive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubyTuesday77/5.5.5-activity-array-automotive/issues"
+  },
+  "homepage": "https://github.com/RubyTuesday77/5.5.5-activity-array-automotive#readme"
+}

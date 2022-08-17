@@ -11,15 +11,6 @@ class Vehicle {
         this.numberOfWheels = 0;
     }
 
-    start() {
-        if (this.fuel > 0) {
-            return this.started = true;
-            console.log("engine started...!!!");
-        } else {
-            return this.started = false;
-            console.log("engine cannot start...");
-        }
-    }
     accelerate() {
         if (this.started) {
             if (this.fuel > 0) {
@@ -33,6 +24,7 @@ class Vehicle {
             alert("You need to start the engine first.");
         }
     }
+
     decelerate() {
         if (this.started) {
             if (this.fuel > 0) {
@@ -51,24 +43,25 @@ class Vehicle {
             alert("You need to start the engine first.");
         }
     }
+
     stop() {
+        console.log('engine off')
         this.started = false;
     }
 
     drive() {
         accelerate();
     }
+
     brake() {
         decelerate();
     }
 
-    autoPark()
-    {
+    autoPark() {
 
     }
 
-    autoDrive()
-    {
+    autoDrive() {
       
     }
 
@@ -76,7 +69,7 @@ class Vehicle {
         if (this.numberOfWheels == 8 && 8 == wheels) {
             console.log(this.model + " " + this.make + " is a Truck");
         } else if (this.numberOfWheels == 4 && 4 == wheels) {
-            console.log(this.model + " " + this.make + " is a CAr");
+            console.log(this.model + " " + this.make + " is a Car");
         } else if (this.numberOfWheels == 2 && 2 == wheels) {
             console.log(this.model + " " + this.make + " is a Bike");
         } else {
@@ -85,7 +78,5 @@ class Vehicle {
     }
 }
 
-//This exports things you want to use from this "module", more info in readme
-module.exports = {
-    Vehicle
-}
+// This allows the Vehicle class to be exported.
+export {Vehicle}
